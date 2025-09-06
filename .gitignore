@@ -1,0 +1,35 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Node modules (if you ever use npm for tooling)
+node_modules/
+
+# Logs
+*.log
+
+# VS Code settings
+.vscode/
+
+# Build or cache folders (if you ever add bundlers)
+dist/
+build/
+.cache/
+.tmp/
+
+# Environment files (if using local secrets)
+.env
+.env.*
+
+# Misc
+*.swp
+*.swo
