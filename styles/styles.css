@@ -1,0 +1,11 @@
+#shpe_header {
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+#shpe_logo img {
+    max-height: 50px;
+    object-fit: contain;
+}
