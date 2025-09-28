@@ -33,18 +33,26 @@ body {
     left: 0;
     top: 0; }
   .slider .slide-track {
-    animation: scroll 10s linear infinite;
+    animation: scroll 20s linear infinite;
     display: flex;
     width: calc(250px * 14); }
   .slider .slide {
-    height: 100px;
-    width: 250px; }
-
-.slide img {
-  height: 100px;
-  width: 300px; 
-  object-fit: contain;
-  padding: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px; /* Limit slide height */
+    box-sizing: border-box;
+    margin: 0 10px;  /* Add horizontal margin between slides */
   }
+  .slider .slide img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Ensure image fits inside */
+    display: block;
+  }
+
 
 /*# sourceMappingURL=sponsor_slider.css.map */
