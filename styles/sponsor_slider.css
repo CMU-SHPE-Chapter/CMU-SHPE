@@ -33,11 +33,18 @@ body {
     left: 0;
     top: 0; }
   .slider .slide-track {
-    animation: scroll 40s linear infinite;
+    animation: scroll 10s linear infinite;
     display: flex;
     width: calc(250px * 14); }
   .slider .slide {
     height: 100px;
     width: 250px; }
+
+.slide img {
+  height: 100px;
+  width: 300px; 
+  object-fit: contain;
+  padding: 10px;
+  }
 
 /*# sourceMappingURL=sponsor_slider.css.map */
