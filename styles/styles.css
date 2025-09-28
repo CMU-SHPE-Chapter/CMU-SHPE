@@ -9,3 +9,22 @@
     max-height: 50px;
     object-fit: contain;
 }
+
+#board-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#index-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px; /* Add some space between text and image */
+}
+
+#board-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners to the image */
+}
