@@ -1,6 +1,8 @@
 #shpe_header {
     margin-bottom: 20px;
     background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1030;
 }
 
 #shpe_header .navbar {
