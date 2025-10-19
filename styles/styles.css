@@ -116,11 +116,6 @@
     background-color: #f8f9fa; /* Light background to distinguish footer */
 }
 
-/* Center content in footer columns */
-#footer-socials {
-    text-align: center;
-}
-
 #footer-quick-links {
     text-align: center;
 }
@@ -151,4 +146,139 @@
 
 #footer-quick-links {
     border-right: 1px solid #ddd;
+}
+
+/* Sponsor Page Styles */
+#becoming-sponsor {
+    padding: 40px 40px 40px 40px; /* Reduced bottom padding from 60px to 40px */
+    margin-top: 20px; /* Space from navbar */
+    margin-bottom: 20px; /* Reduced from 40px to 20px */
+}
+
+#becoming-sponsor .col-6:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding-right: 30px; /* Space between columns */
+}
+
+#becoming-sponsor .col-6:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding-left: 30px; /* Space between columns */
+}
+
+#becoming-sponsor h1 {
+    margin-bottom: 20px;
+    text-align: center; /* Center the main heading */
+}
+
+#becoming-sponsor h3 {
+    margin-bottom: 15px;
+    text-align: center; /* Center the subheading */
+}
+
+#becoming-sponsor p {
+    text-align: justify; /* Justify text for better readability */
+    line-height: 1.6; /* Better line spacing */
+    margin-bottom: 20px;
+}
+
+#becoming-sponsor .d-flex {
+    justify-content: center; /* Center the button */
+    margin-top: 20px;
+}
+
+/* Sponsor Table Styling */
+.container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.container table th {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid #dee2e6;
+}
+
+.container table td {
+    padding: 25px;
+    border: 1px solid #dee2e6;
+    vertical-align: middle;
+}
+
+/* Medal/Tier images styling */
+.container table td img:not(.sponsor-logo) {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Sponsor logos container */
+.container table td:nth-child(2) {
+    text-align: center;
+}
+
+/* Sponsor logo styling */
+.sponsor-logo {
+    width: 120px;
+    height: 60px;
+    object-fit: contain;
+    margin: 10px 15px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.2s ease;
+}
+
+.sponsor-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive sponsor logos - wrap to next line when needed */
+.container table td:nth-child(2) {
+    line-height: 1.5;
+}
+
+/* Mobile responsive adjustments for sponsor table */
+@media (max-width: 768px) {
+    .container table td {
+        padding: 15px;
+    }
+    
+    .sponsor-logo {
+        width: 100px;
+        height: 50px;
+        margin: 8px 10px;
+    }
+    
+    .container table td img:not(.sponsor-logo) {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Our Sponsors Section Styling */
+.container:has(table) {
+    padding: 20px 40px 60px 40px; /* Reduced top padding from 40px to 20px */
+    margin-bottom: 40px; /* Space before footer */
+}
+
+.container:has(table) h1 {
+    text-align: center; /* Center the main heading */
+    margin-bottom: 20px;
+}
+
+.container:has(table) p {
+    text-align: justify; /* Justify text for better readability */
+    line-height: 1.6; /* Better line spacing */
+    margin-bottom: 30px; /* Space before table */
+    text-align: center; /* Center the description paragraph */
 }
